@@ -1,0 +1,14 @@
+@import '../../styles';
+
+.hero-banner-contact {
+    background-image: url('../../contact.jpg');
+   @extend .hero-image
+}
+
+.title {
+    @extend .title-text
+}
+
+.sub-title {
+    @extend .subtitle-text
+}
