@@ -1,0 +1,14 @@
+@import '../../styles';
+
+.hero-banner-home {
+    background-image: url('../../home-image.jpg');
+   @extend .hero-image
+}
+
+.title {
+    @extend .title-text
+}
+
+.sub-title {
+    @extend .subtitle-text
+}
