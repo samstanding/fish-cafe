@@ -6,3 +6,50 @@
       <h3>Call us for daily specials</h3>
     </div>
   </div>
+
+  <div class="menu-display">
+    <div class="menu">
+      <h2>Raw Bar</h2>
+      <ng-container *ngFor="let item of menuItems">
+          <div *ngIf="item.type==='Raw Bar'">
+            <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
+          </div>
+        </ng-container>
+        <h2>Soups</h2>
+        <ng-container *ngFor="let item of menuItems">
+          <div *ngIf="item.type==='soup'">
+              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
+              <span>{{item.description}}</span>
+          </div>
+        </ng-container>
+        <h2>Salads</h2>
+        <ng-container *ngFor="let item of menuItems">      
+          <div *ngIf="item.type==='salad'">
+              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
+              <span>{{item.description | lowercase }}</span>
+          </div>
+        </ng-container> 
+        <h2>Fries on the Side</h2>
+        <ng-container *ngFor="let item of menuItems"> 
+          <div *ngIf="item.type==='fries on the side'">
+              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
+              <span>{{item.description | lowercase}}</span>
+          </div>
+        </ng-container>
+        <h2>The Works</h2>
+        <ng-container *ngFor="let item of menuItems"> 
+          <div *ngIf="item.type==='the works'">
+              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
+              <span>{{item.description | lowercase}}</span>
+          </div>
+        </ng-container> 
+        <h2>Sides</h2>
+        <ng-container *ngFor="let item of menuItems"> 
+          <div *ngIf="item.type==='sides'">
+              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
+              <span>{{item.description | lowercase}}</span>
+          </div>
+        </ng-container> 
+      
+    </div>
+  </div>
