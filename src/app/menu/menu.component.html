@@ -1,55 +1,96 @@
 <div class="hero-banner-menu">
-    <div class="title">
-        <h1>Check out our Menu</h1>
+  <div class="title">
+    <h1>Check Out Our Menu</h1>
+  </div>
+  <div class="sub-title">
+    <h3>Call us for daily specials</h3>
+  </div>
+</div>
+
+<div class="menu-display">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Raw Bar</h2>
+      <ng-container *ngFor="let item of menuItems | slice:0:5">
+        <div *ngIf="item.type==='Raw Bar'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+        </div>
+      </ng-container>
     </div>
-    <div class="sub-title">
-      <h3>Call us for daily specials</h3>
+
+    <div class="col-sm-4">
+      <h2>Soups</h2>
+      <ng-container *ngFor="let item of menuItems | slice:5:8">
+        <div *ngIf="item.type==='soup'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+          <br/>
+          <span>{{item.description}}</span>
+        </div>
+      </ng-container>
+    </div>
+
+    <div class="col-sm-4">
+      <h2>Salads</h2>
+      <ng-container *ngFor="let item of menuItems | slice:8:11">
+        <div *ngIf="item.type==='salad'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+          <br/>
+          <span>{{item.description | lowercase }}</span>
+        </div>
+      </ng-container>
     </div>
   </div>
 
-  <div class="menu-display">
-    <div class="menu">
-      <h2>Raw Bar</h2>
-      <ng-container *ngFor="let item of menuItems">
-          <div *ngIf="item.type==='Raw Bar'">
-            <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
-          </div>
-        </ng-container>
-        <h2>Soups</h2>
-        <ng-container *ngFor="let item of menuItems">
-          <div *ngIf="item.type==='soup'">
-              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
-              <span>{{item.description}}</span>
-          </div>
-        </ng-container>
-        <h2>Salads</h2>
-        <ng-container *ngFor="let item of menuItems">      
-          <div *ngIf="item.type==='salad'">
-              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
-              <span>{{item.description | lowercase }}</span>
-          </div>
-        </ng-container> 
-        <h2>Fries on the Side</h2>
-        <ng-container *ngFor="let item of menuItems"> 
-          <div *ngIf="item.type==='fries on the side'">
-              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
-              <span>{{item.description | lowercase}}</span>
-          </div>
-        </ng-container>
-        <h2>The Works</h2>
-        <ng-container *ngFor="let item of menuItems"> 
-          <div *ngIf="item.type==='the works'">
-              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
-              <span>{{item.description | lowercase}}</span>
-          </div>
-        </ng-container> 
-        <h2>Sides</h2>
-        <ng-container *ngFor="let item of menuItems"> 
-          <div *ngIf="item.type==='sides'">
-              <span>{{item.name}} </span><span style="float:right">${{item.price}}</span>
-              <span>{{item.description | lowercase}}</span>
-          </div>
-        </ng-container> 
-      
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Starters</h2>
+      <ng-container *ngFor="let item of menuItems | slice:11:17">
+        <div *ngIf="item.type==='starter'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+          <br/>
+          <span>{{item.description | lowercase}}</span>
+        </div>
+      </ng-container>
+    </div>
+  
+    <div class="col-sm-4">
+      <h2>Fries on the side</h2>
+      <ng-container *ngFor="let item of menuItems | slice:17:21">
+        <div *ngIf="item.type==='fries on the side'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+          <br/>
+          <span>{{item.description | lowercase}}</span>
+        </div>
+      </ng-container>
+    </div>
+
+    <div class="col-sm-4">
+      <h2>The Works</h2>
+      <ng-container *ngFor="let item of menuItems | slice:21:27">
+        <div *ngIf="item.type==='the works'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+          <br/>
+          <span>{{item.description | lowercase}}</span>
+        </div>
+      </ng-container>
     </div>
   </div>
+
+  <div class="row">
+      <div class="col-sm-4 offset-sm-4">
+      <h2>Sides</h2>
+      <ng-container *ngFor="let item of menuItems | slice:27">
+        <div *ngIf="item.type==='sides'">
+          <span>{{item.name}} </span>
+          <span style="float:right">${{item.price}}</span>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
