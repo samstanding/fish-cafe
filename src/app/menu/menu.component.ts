@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MENUITEMS } from '../menuitems';
 
-
+//declare empty arrays corresponding to menu item types
 let rawBar = [];
 let soups = [];
 let salads = [];
@@ -10,10 +10,11 @@ let sandies = [];
 let works = [];
 let sides = [];
 
-
+//loops through the menuitems array and sorts by item type
 for (let item of MENUITEMS) {
   if(item.type === 'Raw Bar') {
     rawBar.push(item);
+    console.log(rawBar);
   } else if (item.type === 'soup') {
     soups.push(item); 
   } else if (item.type === 'salad') {
@@ -29,6 +30,8 @@ for (let item of MENUITEMS) {
   }
 }
 
+
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -36,6 +39,7 @@ for (let item of MENUITEMS) {
 })
 
 export class MenuComponent implements OnInit {
+//declaring item types for use in menu.html
  rawBar = rawBar;
  soups = soups;
  salads = salads;

@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  phone = '646-641-2212';
+  message = 'We take reservations for parties of 4 or more'
 
   constructor() { }
 

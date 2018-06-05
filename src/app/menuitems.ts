@@ -19,7 +19,7 @@ export const MENUITEMS: item[] = [
     { id: 16, name: 'Twin Tartare', price: 16, description: 'tuna, salmon, home-made potato chips', type: 'starter' },
     { id: 17, name: 'Lobster Mac & Cheese', price: 19, description: '', type: 'starter' },
     { id: 18, name: 'Catfish Sandwich', price: 16, description: 'blackend or fried', type: 'fries on the side' },
-    { id: 19, name: 'Lobster Roll', price: 21, description: '', type: 'fries on the side' },
+    { id: 19, name: 'Lobster Roll', price: 21, description: 'hot lobster, garlic butter, brioche bun', type: 'fries on the side' },
     { id: 20, name: 'Fish & Chips', price: 18, description: 'british style', type: 'fries on the side' },
     { id: 21, name: 'Tuna Burger', price: 18, description: 'baby kale mison, pickled shallots', type: 'fries on the side' },
     { id: 22, name: 'Lobster Feast', price: 55, description: '1 1/4 LB whole main lobster, steamers, corn, fries', type: 'the works' },

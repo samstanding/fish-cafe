@@ -1,3 +1,4 @@
+<!-- hero banner -->
 <div class="hero-banner-menu">
   <div class="title">
     <h1>Check Out Our Menu</h1>
@@ -7,7 +8,10 @@
   </div>
 </div>
 
+<!-- menu content goes here-->
 <div class="menu-display">
+
+<!-- first row of items-->
   <div class="row">
     <div class="col-sm-4">
       <h2>Raw Bar</h2>
@@ -16,6 +20,7 @@
           <strong>{{item.name}}</strong>
         </span>
         <span style="float:right">${{item.price}}</span>
+        <br/>
       </ng-container>
     </div>
 
@@ -28,6 +33,7 @@
         <span style="float:right">${{item.price}}</span>
         <br/>
         <span>{{item.description}}</span>
+        <br/>
       </ng-container>
     </div>
 
@@ -40,10 +46,12 @@
         <span style="float:right">${{item.price}}</span>
         <br/>
         <span>{{item.description | lowercase }}</span>
+        <br/>
       </ng-container>
     </div>
   </div>
 
+  <!-- second row of items-->
   <div class="row">
     <div class="col-sm-4">
       <h2>Starters</h2>
@@ -54,6 +62,7 @@
         <span style="float:right">${{item.price}}</span>
         <br/>
         <span>{{item.description | lowercase}}</span>
+        <br/>
       </ng-container>
     </div>
 
@@ -66,6 +75,7 @@
         <span style="float:right">${{item.price}}</span>
         <br/>
         <span>{{item.description | lowercase}}</span>
+        <br/>
       </ng-container>
     </div>
 
@@ -78,10 +88,12 @@
         <span style="float:right">${{item.price}}</span>
         <br/>
         <span>{{item.description | lowercase}}</span>
+        <br/>
       </ng-container>
     </div>
   </div>
 
+  <!-- third row of items-->
   <div class="row">
     <div class="col-sm-4 offset-sm-4">
       <h2>Sides</h2>
@@ -90,6 +102,7 @@
           <strong>{{item.name}}</strong>
         </span>
         <span style="float:right">${{item.price}}</span>
+        <br/>
       </ng-container>
     </div>
   </div>
