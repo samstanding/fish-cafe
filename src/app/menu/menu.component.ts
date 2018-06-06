@@ -12,16 +12,15 @@ let sides = [];
 
 //loops through the menuitems array and sorts by item type
 for (let item of MENUITEMS) {
-  if(item.type === 'Raw Bar') {
+  if (item.type === 'Raw Bar') {
     rawBar.push(item);
-    console.log(rawBar);
   } else if (item.type === 'soup') {
-    soups.push(item); 
+    soups.push(item);
   } else if (item.type === 'salad') {
     salads.push(item);
   } else if (item.type === 'starter') {
     starters.push(item);
-  } else if(item.type === 'fries on the side') {
+  } else if (item.type === 'fries on the side') {
     sandies.push(item);
   } else if (item.type === 'the works') {
     works.push(item);
@@ -30,8 +29,6 @@ for (let item of MENUITEMS) {
   }
 }
 
-
-
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -39,16 +36,14 @@ for (let item of MENUITEMS) {
 })
 
 export class MenuComponent implements OnInit {
-//declaring item types for use in menu.html
- rawBar = rawBar;
- soups = soups;
- salads = salads;
- starters = starters;
- sandies = sandies;
- works = works;
- sides = sides;
-  
- 
+  //declaring item types for use in menu.html
+  rawBar = rawBar;
+  soups = soups;
+  salads = salads;
+  starters = starters;
+  sandies = sandies;
+  works = works;
+  sides = sides;
 
   constructor() { }
 

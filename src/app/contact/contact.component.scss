@@ -1,12 +1,13 @@
 @import '../../styles';
 
 .hero-banner-contact {
-    background-image: url('../../images/table.jpg');
+   background-image: url('../../images/table.jpg');
    @extend .hero-image
 }
 
 .title {
-    @extend .title-text
+    @extend .title-text;
+    color: black;
 }
 
 .sub-title {

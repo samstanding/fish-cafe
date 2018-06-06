@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   //simulates an external db or api that data would be saved in
   name ='Frankie\'s Fish Cafe';
   address = '8257 Ridgeview St. Darien, CT 06820';
+  message ='';
 
   hours = {
     m: '12:00pm - 11:00pm',

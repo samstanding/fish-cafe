@@ -9,16 +9,21 @@
 </div>
 
 <!-- page content, address and hours -->
-<div class="home-content">
-  <h3>{{ name }}</h3>
-  <h3>{{ address }}</h3>
+<div class="home-content row">
+  <div class="col-sm-8">
+    <h3>{{ name }}</h3>
+    <h3>{{ address }}</h3>
+    <h3 style='color:red'> {{ message }} </h3>
+  </div>
   <!-- need to shift this right -->
-  <h4>Hours</h4>
-  <p>Monday: {{hours.m}}</p>
-  <p>Tuesday: {{hours.t}}</p>
-  <p>Wednesday: {{hours.w}}</p>
-  <p>Thursday: {{hours.th}}</p>
-  <p>Friday: {{hours.f}}</p>
-  <p>Saturday: {{hours.s}}</p>
-  <p>Sunday: {{hours.su}}</p>
+  <div class="col-sm-4">
+    <h4>Hours</h4>
+    <span>Monday: {{hours.m}}</span><br/>
+    <span>Tuesday: {{hours.t}}</span><br/>
+    <span>Wednesday: {{hours.w}}</span><br/>
+    <span>Thursday: {{hours.th}}</span><br/>
+    <span>Friday: {{hours.f}}</span><br/>
+    <span>Saturday: {{hours.s}}</span><br/>
+    <span>Sunday: {{hours.su}}</span>
+</div>
 </div>

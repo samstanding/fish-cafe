@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   phone = '646-641-2212';
-  message = 'We take reservations for parties of 4 or more'
+  message = 'We only take reservations for parties of 4 or more'
 
   constructor() { }
 

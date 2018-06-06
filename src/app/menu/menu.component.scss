@@ -1,7 +1,7 @@
 @import '../../styles';
 
 .hero-banner-menu {
-    background-image: url('../../images/fish.jpg');
+   background-image: url('../../images/fish.jpg');
    @extend .hero-image
 }
 
@@ -17,17 +17,3 @@ h2 {
     text-align: center;
 }
 
-.menu-display {
-    padding: 20;
-    margin: 50;
-}
-
-.menu-left {
-    display: inline-block;
-    text-align: center;
-}
-
-.menu-right {
-    @extend .menu-left;
-    float: right;
-}
