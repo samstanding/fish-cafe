@@ -1,4 +1,4 @@
-//sets up the routes for home, menu and contact pages
+// sets up the routes for home, menu and contact pages
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'contact', component: ContactComponent },
-]
+];
 
 @NgModule({
   exports: [ RouterModule ],

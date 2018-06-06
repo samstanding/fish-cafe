@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  //cafe name, address and hours saved in js
-  //simulates an external db or api that data would be saved in
-  name ='Frankie\'s Fish Cafe';
+  // cafe name, address and hours saved in js
+  // simulates an external db or api that data would be saved in
+  name = 'Frankie\'s Fish Cafe';
   address = '8257 Ridgeview St. Darien, CT 06820';
-  message ='';
+  message = '';
 
   hours = {
     m: '12:00pm - 11:00pm',
@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     f: '12:00pm - 12:00am',
     s: '12:00pm - 12:00am',
     su: '12:00pm - 11:00pm',
-  }
+  };
 
   constructor() { }
 

@@ -1,6 +1,6 @@
-//class for menu items
+// class for menu items
 
-export class item {
+export class Item {
     id: number;
     name: string;
     price: number;

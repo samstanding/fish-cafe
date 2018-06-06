@@ -1,8 +1,7 @@
-//imports item class- creates data for menu-- this would come from an endpoint API 
+// imports item class- creates data for menu-- this would come from an endpoint API 
+import { Item } from './item';
 
-import { item } from './item';
-
-export const MENUITEMS: item[] = [
+export const MENUITEMS: Item[] = [
     { id: 1, name: 'Blue Point Oysters', price: 1.45, description: '', type: 'Raw Bar' },
     { id: 2, name: 'Martha\'s Vineyard Oysters', price: 2.25, description: '', type: 'Raw Bar' },
     { id: 3, name: 'Wellfleet Oysters', price: 2.25, description: '', type: 'Raw Bar' },
@@ -35,4 +34,4 @@ export const MENUITEMS: item[] = [
     { id: 30, name: 'Garlic Bread', price: 4, description: '', type: 'sides' },
     { id: 31, name: 'Rustic Mashed Potatoes', price: 6, description: '', type: 'sides' },
     { id: 28, name: 'French Fries', price: 6, description: '', type: 'sides' },
-]
+];
