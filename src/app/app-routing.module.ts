@@ -1,3 +1,5 @@
+//sets up the routes for home, menu and contact pages
+
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';

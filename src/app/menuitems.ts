@@ -1,3 +1,5 @@
+//imports item class- creates data for menu-- this would come from an endpoint API 
+
 import { item } from './item';
 
 export const MENUITEMS: item[] = [
