@@ -1,20 +1,19 @@
 @import '../../styles';
 
 .hero-banner-contact {
-   background-image: url('../../images/table.jpg');
-   @extend .hero-image
+  @extend %hero-image;
+  background-image: url('../../images/table.jpg');
 }
 
 .title {
-    @extend .title-text;
-    color: black;
+  @extend %title-text;
 }
 
 .sub-title {
-    @extend .subtitle-text
+  @extend %subtitle-text;
 }
 
 .contact-content {
-    text-align: center;
-    font-family: 'Open Sans', 'sans-serif'
+  font-family: 'Open Sans', 'sans-serif';
+  text-align: center;
 }

@@ -1,13 +1,17 @@
-@import "~bootstrap/scss/bootstrap";
+@import '~bootstrap/scss/bootstrap';
+
+$color-black: #000;
+$color-grey: #999;
+$color-white: #fff;
 
 %title-font {
-    font-family: 'sans-serif', 'Helvetica', Open Sans;
-    font-size: 32px;
+  font-family: 'sans-serif', 'Helvetica', Open Sans;
+  font-size: 32px;
 }
 
 %sub-title-font {
-    @extend %title-font;
-    font-size: 18px;
+  @extend %title-font;
+  font-size: 18px;
 }
 
 html,
@@ -16,7 +20,7 @@ body {
   margin: 0;
 }
 
-.hero-image {
+%hero-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,9 +28,9 @@ body {
   height: 400px;
 }
 
-.title-text {
-  color: black;
+%title-text {
   @extend %title-font;
+  color: $color-black;
   left: 50%;
   position: absolute;
   text-align: center;
@@ -34,7 +38,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.subtitle-text {
-  @extend .title-text;
+%subtitle-text {
+  @extend %title-text;
   top: 50%;
 }

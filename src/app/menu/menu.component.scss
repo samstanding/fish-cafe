@@ -1,19 +1,18 @@
 @import '../../styles';
 
 .hero-banner-menu {
-   background-image: url('../../images/fish.jpg');
-   @extend .hero-image
+  @extend %hero-image;
+  background-image: url('../../images/fish.jpg');
 }
 
 .title {
-    @extend .title-text
+  @extend %title-text;
 }
 
 .sub-title {
-    @extend .subtitle-text
+  @extend %subtitle-text;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
-

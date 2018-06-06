@@ -1,18 +1,18 @@
 @import '../../styles';
 
 .hero-banner-home {
-   background-image: url('../../images/chef.jpg');
-   @extend .hero-image
+  @extend %hero-image;
+  background-image: url('../../images/chef.jpg');
 }
 
 .title {
-    @extend .title-text
+  @extend %title-text;
 }
 
 .sub-title {
-    @extend .subtitle-text
+  @extend %subtitle-text;
 }
 
 .home-content {
-    font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Open Sans', 'sans-serif';
 }
