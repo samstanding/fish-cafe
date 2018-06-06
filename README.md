@@ -1,27 +1,16 @@
 # FishCafe
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+My client is a small pescatarian cafe and they asked for a small site to be built to drive business. Outside of their request I set up some configurations to aid in the development of the wesbite. The scope of this project focused on solely on the front-end. The next step in the project is to add a nodeJS server and connect that to my clients' Airtable database. That way they would be able to edit the content on the site, whenever they see fit. 
 
-## Development server
+##Build With
+Angular 6
+SCSS
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##Prerequisites
 
-## Code scaffolding
+- [Node.js](https://nodejs.org/en/)
+- Not required but nice to have [AngularCLI](https://cli.angular.io/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Installation
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get this running, clone or download the repo, and run `npm install` to install all dependencies, then run either `npm start` or `ng serve` (if you have the AngularCLI installed) to run the server. Your server will serve the app on localhost:4200. 
