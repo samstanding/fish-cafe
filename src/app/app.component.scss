@@ -1,26 +1,18 @@
-li {
-    float: left;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #999;
+  }
+  .site-header a:hover {
+    color: #fff;
     text-decoration: none;
-    font-family:  sans-serif;
-}
+  }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+//when link is active-- color changes like hover
+.active {
+    color: #fff !important;
 }
 
