@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // cafe name, address and hours saved in js
-  // simulates an external db or api that data would be saved in
+   // title and subtitle values
+   title = 'Welcome To Frankie\'s Fish Cafe';
+   subTitle = 'Classy seaside fish cafe';
+
+  // name, address, hours and message values
   name = 'Frankie\'s Fish Cafe';
   address = '8257 Ridgeview St. Darien, CT 06820';
   message = '';

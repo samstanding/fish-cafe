@@ -36,6 +36,10 @@ for (const item of MENUITEMS) {
 })
 
 export class MenuComponent implements OnInit {
+  // title and subtitle values
+  title = 'Check Out Our Menu';
+  subTitle = 'Call us for daily specials';
+  
   // declaring item types for use in menu.html
   rawBar = rawBar;
   soups = soups;

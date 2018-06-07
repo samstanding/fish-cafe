@@ -1,4 +1,4 @@
-// imports item class- creates data for menu-- this would come from an endpoint API 
+// imports item class- creates data for menu-- this would come from an endpoint API
 import { Item } from './item';
 
 export const MENUITEMS: Item[] = [
